@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+button {
+    margin-left: 50px;
+}
+
+.todo {
+    color: #FFFFFF;
+}
+
+#todo_list {
+    margin: 30px auto;
+    width: 80%;
+    padding: 30px;
+}
+
+hr {
+    border-top: 2px solid #E74641;
+}
