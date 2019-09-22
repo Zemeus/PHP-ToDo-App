@@ -8,8 +8,9 @@
         if(isset($_POST['todo'])) {
             $todo = trim(htmlspecialchars($_POST['todo']));
 
-            $query = "INSERT INTO todos (todo) VALUES ('{$todo}')";
-            $connection->exec($query);
+            $query = $connection->prepare("INSERT INTO todos (todo) VALUES (:todo)");
+            $query->bindParam(':todo', $todo, PDO::PARAM_STR);
+            $query->execute();
         }
 
         $query = $connection->prepare('SELECT * FROM todos');
