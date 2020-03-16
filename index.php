@@ -15,7 +15,8 @@
             <button id="add_btn" class="btn btn-primary float-right" onclick="submit_todo()">ADD</button>
         </div>
         <div class="col-md-3"></div>
-    </section> <!-- END TODO INPUT -->
+    </section>
+    <!-- END TODO INPUT -->
 
     <!-- TODOS OUTPUT -->
     <section id="todo_list">
@@ -29,7 +30,8 @@
             }
         ?>
         </ul>
-    </section> <!-- END TODOS OUTPUT -->
+    </section>
+    <!-- END TODOS OUTPUT -->
 
 </div>
 
